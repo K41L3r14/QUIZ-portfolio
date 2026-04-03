@@ -99,10 +99,10 @@ const projects = [
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-paper text-ink">
-      <header className="relative overflow-hidden border-b border-ink/10 px-6 pb-16 pt-12 sm:px-8">
-        <div className="absolute -right-16 top-8 h-40 w-40 rounded-full bg-clay/20 blur-3xl" />
-        <div className="absolute -left-20 bottom-0 h-44 w-44 rounded-full bg-pine/20 blur-3xl" />
+    <div className="min-h-screen bg-gradient-to-b from-paper via-[#dbeee8] to-[#c9e3db] text-ink">
+      <header className="relative overflow-hidden border-b border-ink/15 px-6 pb-16 pt-12 sm:px-8">
+        <div className="absolute -right-16 top-8 h-40 w-40 rounded-full bg-clay/25 blur-3xl" />
+        <div className="absolute -left-20 bottom-0 h-44 w-44 rounded-full bg-pine/25 blur-3xl" />
         <nav className="mx-auto mb-12 flex max-w-5xl flex-wrap items-center justify-between gap-3">
           <p className="text-lg font-black tracking-tight">Katia Henrriquez</p>
           <div className="flex items-center gap-2 text-xs font-semibold sm:text-sm">
@@ -167,7 +167,7 @@ export default function App() {
             {skills.map((skill) => (
               <li
                 key={skill}
-                className="rounded-xl border border-ink/10 bg-white px-4 py-3 text-sm font-medium transition hover:-translate-y-1 hover:border-pine/40"
+                className="rounded-xl border border-ink/10 bg-[#f7fffc]/90 px-4 py-3 text-sm font-medium transition hover:-translate-y-1 hover:border-pine/40"
               >
                 {skill}
               </li>
@@ -181,7 +181,7 @@ export default function App() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className="rounded-2xl border border-ink/15 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lift"
+                className="rounded-2xl border border-ink/15 bg-[#f7fffc]/90 p-5 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lift"
               >
                 <p className="text-sm font-black text-clay">{service.id}</p>
                 <h3 className="mt-1 text-xl font-bold">{service.title}</h3>
@@ -201,7 +201,7 @@ export default function App() {
             {projects.map((project) => (
               <article
                 key={project.title}
-                className="rounded-2xl border border-ink/15 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lift"
+                className="rounded-2xl border border-ink/15 bg-[#f7fffc]/90 p-5 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lift"
               >
                 <h3 className="text-xl font-bold">{project.title}</h3>
                 <p className="text-sm font-semibold text-pine">{project.subtitle}</p>
@@ -216,7 +216,10 @@ export default function App() {
           </div>
         </section>
 
-        <section id="contact" className="rounded-2xl bg-ink px-6 py-8 text-paper">
+        <section
+          id="contact"
+          className="rounded-2xl bg-gradient-to-br from-pine to-ink px-6 py-8 text-paper"
+        >
           <h2 className="text-2xl font-bold sm:text-3xl">Let&apos;s Work Together!</h2>
           <p className="mt-3 max-w-2xl text-paper/85">
             Get in touch for full-stack development, AI feature integration, and

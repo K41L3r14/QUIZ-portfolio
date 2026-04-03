@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        paper: "#f6f1e7",
-        ink: "#162025",
-        clay: "#b24f35",
-        pine: "#1f4d3e",
-        wheat: "#f2dbc2"
+        paper: "#eaf4f0",
+        ink: "#1c3b3f",
+        clay: "#d08452",
+        pine: "#2f6a62",
+        wheat: "#d9ebe3"
       },
       boxShadow: {
-        lift: "0 16px 32px rgba(22, 32, 37, 0.2)"
+        lift: "0 16px 32px rgba(28, 59, 63, 0.2)"
       }
     }
   },
